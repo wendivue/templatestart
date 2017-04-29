@@ -1,0 +1,19 @@
+$color-primary-: #5B5F97;
+$color-primary-darken: darken(#5B5F97, 10%);
+$color-secondary: #fff;
+
+$font-primary: "Raleway", sans-serif;
+$font-size-primary: em(16);
+$font-size-heading: em(32);
+$line-height: 14px;
+
+%clearfix {
+  *zoom: 1;
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}

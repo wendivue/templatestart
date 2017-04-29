@@ -1,0 +1,26 @@
+$susy: (
+  columns: 12,
+  container: 1200px,
+  gutters: 1/4,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+);
+
+.wrap {
+  @include container;
+}
+
+.sidebar {
+  @include span(3);
+  @media screen and (max-width: 768px) {
+    @include span(12);
+  }
+}
+
+.content {
+  @include span(9 last);
+  @media screen and (max-width: 768px) {
+    @include span(12);
+  }
+}
