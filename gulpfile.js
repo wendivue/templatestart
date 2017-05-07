@@ -13,13 +13,6 @@ var gulp           = require('gulp'),
 		autoprefixer   = require('gulp-autoprefixer'),
 		notify         = require('gulp-notify');
 
-gulp.task('html', function () {
-		  gulp.src('src/*.html')
-		      .pipe(rigger())
-		      .pipe(gulp.dest('src/'))
-					.pipe(browserSync.reload({stream: true}));
-});
-
 gulp.task('scripts', function() {
 	return gulp.src([
 		'src/libs/jquery/jquery.min.js',
@@ -50,10 +43,10 @@ gulp.task('sass', function() {
 	.pipe(browserSync.reload({stream: true}));
 });
 
-gulp.task('watch', ['sass', 'scripts', 'browser-sync', 'html'], function() {
+gulp.task('watch', ['sass', 'scripts', 'browser-sync'], function() {
 	gulp.watch('src/sass/**/*.scss', ['sass']);
 	gulp.watch(['libs/**/*.js', 'src/js/common.js'], ['scripts']);
-	gulp.watch('src/*.html', ['html']);
+	gulp.watch('src/*.html', browserSync.reload);
 });
 
 gulp.task('imagemin', function() {
