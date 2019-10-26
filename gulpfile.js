@@ -51,7 +51,13 @@ gulp.task('watch', ['sass', 'scripts', 'browser-sync'], function() {
 
 gulp.task('imagemin', function() {
 	return gulp.src('src/img/**/*')
-	.pipe(cache(imagemin()))
+	//.pipe(cache(imagemin()))
+	   .pipe(imagemin([
+      imagemin.gifsicle({interlaced: true}),
+      imagemin.jpegtran({progressive: true}),
+      imagemin.optipng(),
+      imagemin.svgo([{removeViewBox: false}, {minifyStyles: false}])
+    ], {verbose: true}))
 	.pipe(gulp.dest('build/img'));
 });
 

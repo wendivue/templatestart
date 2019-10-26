@@ -2,9 +2,9 @@
 
 Author: Sakai Vladimir
 
-TemplateStart is inclusive: Gulp, Sass, Susy, Browsersync, Autoprefixer, Clean-CSS, Imagemin аnd other plugins
+TemplateStart is inclusive: Gulp, Sass, Browsersync, Autoprefixer, Clean-CSS, Imagemin аnd other plugins
 
-The template uses a Sass with Sass syntax and project structure with source code in the directory src/ and production folder build/, that contains ready project with optimized HTML, CSS, JS and images.
+The template uses a Sass with Scss syntax and project structure with source code in the directory src/ and production folder build/, that contains ready project with optimized HTML, CSS, JS and images.
 
 How to use
 -------------------------

@@ -1,19 +1,40 @@
-$color-primary-: #5B5F97;
-$color-primary-darken: darken(#5B5F97, 10%);
-$color-secondary: #fff;
+ $color-primary: #0cb8b6;
+ $color-secondary: #191919;
+ 
+ $text-main-color: #000000;;
+ $text-secondary-color: rgb(102, 102, 102);
+ $link-color: #5B595B;
+ 
+ $font-family: 'Comfortaa', cursive;
+ $font-family--h: 'Comfortaa';
+ 
+ $font-size: 16px;
+ $font-size--h1: 70px;
+ $font-size--h1-md: 50px;
+ $font-size--h1-xs: 40px;
+ $font-size--h2: 30px;
+ $font-size--h2-md: 26px;;
+ $font-size--h3: 24px;
+ $font-size--h4: 18px;
+ 
+ $line-height: 1.5;
 
-$font-primary: "Raleway", sans-serif;
-$font-size-primary: em(16);
-$font-size-heading: em(32);
-$line-height: 14px;
+ $breakpoint-lg: 1200px;
+ $breakpoint-md: 992px;
+ $breakpoint-sm: 768px;
+ $breakpoint-xs: 576px;
+ 
+ /*Helper classes*/
+ .clearfix:before,
+ .clearfix:after {
+     content: " ";
+     display: table;
+ }
+ 
+ .clearfix:after {clear: both;}
+ 
+ .clearfix {
+     *zoom: 1;
+ }
+ 
 
-%clearfix {
-  *zoom: 1;
-  &:before, &:after {
-    content: " ";
-    display: table;
-  }
-  &:after {
-    clear: both;
-  }
-}

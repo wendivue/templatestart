@@ -1,10 +1,10 @@
 @import "reset";
+@import "vars";
+@import "global";
+@import "global-typography";
 @import "fonts";
 @import "libs";
-@import "typography";
-@import "vars";
-@import "grids";
+@import "shared";
 @import "header";
 @import "common";
 @import "footer";
-@import "media";
