@@ -9,8 +9,8 @@ The template uses a Sass with Scss syntax and project structure with source code
 How to use
 -------------------------
 1. Download templatestart from GitHub.
-2. Install Node Modules: **npm i**.
-3. Run the template: **gulp**.
+2. Install Node Modules: <code>npm i</code>
+3. Run the template: <code>gulp</code>
   
 Gulp tasks:
 -------------------------
